@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SODONOUGBO Finafa Martial</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-header">
+                        <h1>Vous avez un <span class="highlight">projet en tête ?</span></h1>
+                        <p>N'hésitez pas à me <span class="highlight">contacter</span></p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prenom">Votre prénom</label>
+                                <input type="text" id="prenom" name="prenom" required>
+                                <span class="error-message" id="prenomError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nom">Votre nom</label>
+                                <input type="text" id="nom" name="nom" required>
+                                <span class="error-message" id="nomError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Votre sujet</label>
+                            <input type="text" id="sujet" name="sujet" placeholder="Ex: Demande de devis..." required>
+                            <span class="error-message" id="sujetError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="8" placeholder="Décrivez votre projet..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                    
+                    <div class="success-message" id="successMessage">
+                        <p>✅ Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.</p>
+                    </div>
+                </div>
+                
+                <footer class="page-footer">
+                    <p>Designed by <span class="highlight">SODONOUGBO Finafa Martial</span> with HTML CSS JS</p>
+                    <p>Tous droits réservés - 2025</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
