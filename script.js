@@ -243,7 +243,7 @@ function addHoverEffects() {
             btn.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 btn.style.transform = 'scale(1)';
-                alert('Redirection vers le projet');
+                //alert('Redirection vers le projet');
             }, 150);
         });
     });
@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Performance: Lazy loading pour les images
+//loading pour les images
 function initLazyLoading() {
     const images = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
